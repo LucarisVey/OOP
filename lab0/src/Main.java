@@ -1,3 +1,4 @@
+import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Scanner;
 
@@ -24,7 +25,8 @@ public class Main {
     }
     private void printDate(Date date){
         System.out.println("////////////////////////////////////////////");
-        System.out.printf("%1$tA %1$te %1$tB\n", date);
+        SimpleDateFormat format = new SimpleDateFormat("EEEE d MMMM");
+        System.out.println(format.format(date));
     }
     private void run() {
         System.out.println("Введіть число x:");
