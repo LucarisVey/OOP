@@ -43,10 +43,6 @@ public class Phone {
         talkTimeOutCity = _talkTimeOutCity;
     }
 
-    public void setId(int id){
-        this.id = id;
-    }
-
     public int getId(){
         return this.id;
     }
@@ -55,81 +51,30 @@ public class Phone {
         return lastName;
     }
 
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
 
     public String getFirstName() {
         return firstName;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
 
     public String getSurname() {
         return surname;
-    }
-
-    public void setSurname(String surname) {
-        this.surname = surname;
     }
 
     public long getAccountNumber() {
         return accountNumber;
     }
 
-    public void setAccountNumber(long accountNumber) {
-        this.accountNumber = accountNumber;
-    }
 
     public double getTalkTimeInCity() {
         return talkTimeInCity;
     }
 
-    public void setTalkTimeInCity(double talkTimeInCity) {
-        this.talkTimeInCity = talkTimeInCity;
-    }
 
     public double getTalkTimeOutCity() {
         return talkTimeOutCity;
     }
 
-    public void setTalkTimeOutCity(double talkTimeOutCity) {
-        this.talkTimeOutCity = talkTimeOutCity;
-    }
-    /*public void setValue(){
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter user's id:");
-        int id = scanner.nextInt();
-        scanner.nextLine();
-        this.setId(id);
-        System.out.println("Enter user's last name:");
-        String lastName = scanner.nextLine();
-        scanner.nextLine();
-        this.setLastName(lastName);
-        System.out.println("Enter user's first name:");
-        String firstName = scanner.nextLine();
-        scanner.nextLine();
-        this.setFirstName(firstName);
-        System.out.println("Enter user's surname:");
-        String surname = scanner.nextLine();
-        scanner.nextLine();
-        this.setSurname(surname);
-        System.out.println("Enter user's account number:");
-        long accountNumber = scanner.nextLong();
-        scanner.nextLine();
-        this.setAccountNumber(accountNumber);
-        System.out.println("Enter user's talk time in the city:");
-        double talkTimeInCity = scanner.nextDouble();
-        scanner.nextLine();
-        this.setTalkTimeInCity(talkTimeInCity);
-        System.out.println("Enter user's talk time out the city:");
-        double talkTimeOutCity = scanner.nextDouble();
-        scanner.nextLine();
-        this.setTalkTimeOutCity(talkTimeOutCity);
-
-    }*/
 
     public String toString(){
         return "Phone {" + "id = " + id + ", last name = " + lastName +
