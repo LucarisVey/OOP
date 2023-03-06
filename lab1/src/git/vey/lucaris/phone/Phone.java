@@ -13,22 +13,22 @@ public class Phone {
     private double talkTimeOutCity;
 
     public Phone (){
-        Scanner s = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.println("Enter user's * id:");
-        id = s.nextInt();
-        s.nextLine();
+        id = scanner.nextInt();
+        scanner.nextLine();
         System.out.println("Enter user's last name:");
-        lastName = s.nextLine();
+        lastName = scanner.nextLine();
         System.out.println("Enter user's first name:");
-        firstName = s.nextLine();
+        firstName = scanner.nextLine();
         System.out.println("Enter user's surname:");
-        surname = s.nextLine();
+        surname = scanner.nextLine();
         System.out.println("Enter user's account number:");
-        accountNumber = s.nextLong();
+        accountNumber = scanner.nextLong();
         System.out.println("Enter user's talk time in city:");
-        talkTimeInCity = s.nextDouble();
+        talkTimeInCity = scanner.nextDouble();
         System.out.println("Enter user's talk time out city:");
-        talkTimeOutCity = s.nextDouble();
+        talkTimeOutCity = scanner.nextDouble();
     }
 
     public Phone (int id, String lastName, String firstName,

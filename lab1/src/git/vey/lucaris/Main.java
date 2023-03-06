@@ -6,7 +6,7 @@ import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Main {
-    private Phone[] phone;
+    private Phone[] phones;
     public static void main(String[] args) {
         Main main = new Main();
 
@@ -21,17 +21,17 @@ public class Main {
     }
 
     public Main(){
-        phone = new Phone[3];
+        phones = new Phone[3];
 
-        phone[0] = new Phone(1, "Мельник", "Анна", "Маріївна", 2131, 8.7, 5.6);
-        phone[1] = new Phone();
+        phones[0] = new Phone(1, "Мельник", "Анна", "Маріївна", 2131, 8.7, 5.6);
+        phones[1] = new Phone();
     }
     public void showExceededTimeInCity(){
         System.out.println("1//////////////////////////////////////");
         System.out.println("Enter given time in city:");
-        Scanner sExceedIn = new Scanner(System.in);
-        double timeIn = sExceedIn.nextDouble();
-        for (Phone item: phone) {
+        Scanner scanner = new Scanner(System.in);
+        double timeIn = scanner.nextDouble();
+        for (Phone item: phones) {
             if (item.getTalkTimeInCity() > timeIn)
                 System.out.println(item.toString());
         }
@@ -41,9 +41,9 @@ public class Main {
     public void showUsedTalkOutCity(){
         System.out.println("2//////////////////////////////////////");
         System.out.println("Enter given time out city:");
-        Scanner sExceedOut = new Scanner(System.in);
-        double timeOut = sExceedOut.nextDouble();
-        for (Phone item: phone) {
+        Scanner scanner = new Scanner(System.in);
+        double timeOut = scanner.nextDouble();
+        for (Phone item: phones) {
             if (item.getTalkTimeOutCity() > timeOut)
                 System.out.println(item.toString());
         }
@@ -51,23 +51,23 @@ public class Main {
     }
 
     public void showInfoOnRange(){
-        System.out.println("Enter the lower limit:");
-        Scanner sRange = new Scanner(System.in);
-        long range1 = sRange.nextLong();
-        System.out.println("Enter the upper limit:");
-        long range2 = sRange.nextLong();
+        System.out.println("Enter the lower limit of account numbers:");
+        Scanner scanner = new Scanner(System.in);
+        long range1 = scanner.nextLong();
+        System.out.println("Enter the upper limit of account numbers:");
+        long range2 = scanner.nextLong();
         System.out.println("3//////////////////////////////////////");
-        for (int i = 0; i<= phone.length; i++){
-            if (phone[i].getAccountNumber()>=range1 && phone[i].getAccountNumber()<=range2)
-                System.out.println(phone[i].toString());
+        for (int i = 0; i<= phones.length; i++){
+            if (phones[i].getAccountNumber()>=range1 && phones[i].getAccountNumber()<=range2)
+                System.out.println(phones[i].toString());
         }
 
     }
 
     public void printAll(){
         System.out.println("4//////////////////////////////////////");
-        for (int i = 0; i< phone.length; i++) {
-            System.out.println(phone[i]);
+        for (int i = 0; i< phones.length; i++) {
+            System.out.println(phones[i]);
         }
 
     }
