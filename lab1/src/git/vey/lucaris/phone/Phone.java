@@ -31,16 +31,16 @@ public class Phone {
         talkTimeOutCity = s.nextDouble();
     }
 
-    public Phone (int _id, String _lastName, String _firstName,
-                  String _surname, long _accountNumber,
-                  double _talkTimeInCity, double _talkTimeOutCity){
-        id = _id;
-        lastName = _lastName;
-        firstName = _firstName;
-        surname = _surname;
-        accountNumber = _accountNumber;
-        talkTimeInCity = _talkTimeInCity;
-        talkTimeOutCity = _talkTimeOutCity;
+    public Phone (int id, String lastName, String firstName,
+                  String surname, long accountNumber,
+                  double talkTimeInCity, double talkTimeOutCity){
+        this.id = id;
+        this.lastName = lastName;
+        this.firstName = firstName;
+        this.surname = surname;
+        this.accountNumber = accountNumber;
+        this.talkTimeInCity = talkTimeInCity;
+        this.talkTimeOutCity = talkTimeOutCity;
     }
 
     public int getId(){

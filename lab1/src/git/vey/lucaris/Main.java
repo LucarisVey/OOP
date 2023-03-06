@@ -10,7 +10,7 @@ public class Main {
     public static void main(String[] args) {
         Main main = new Main();
 
-        main.showExceedTimeInCity();
+        main.showExceededTimeInCity();
 
         main.showUsedTalkOutCity();
 
@@ -26,7 +26,7 @@ public class Main {
         phone[0] = new Phone(1, "Мельник", "Анна", "Маріївна", 2131, 8.7, 5.6);
         phone[1] = new Phone();
     }
-    public void showExceedTimeInCity(){
+    public void showExceededTimeInCity(){
         System.out.println("1//////////////////////////////////////");
         System.out.println("Enter given time in city:");
         Scanner sExceedIn = new Scanner(System.in);
